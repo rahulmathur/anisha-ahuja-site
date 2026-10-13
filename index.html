@@ -183,6 +183,12 @@ figure.fig.half{max-width:420px}
 .gallery figure.fig img{aspect-ratio:4/5;object-fit:cover}
 .hero-img{border-radius:14px;overflow:hidden;box-shadow:var(--shadow);margin-bottom:22px}
 .hero-img img{width:100%;display:block;max-height:380px;object-fit:cover;object-position:top}
+.cphoto{border-radius:14px;overflow:hidden;box-shadow:var(--shadow);background:var(--paper2)}
+.cphoto img{width:100%;height:100%;object-fit:cover;display:block}
+.card .cphoto{margin:-22px -22px 16px;border-radius:14px 14px 0 0;aspect-ratio:16/10;border-bottom:1px solid var(--line)}
+.credit{font-family:"Work Sans",sans-serif;font-size:11.5px;color:var(--muted);margin-top:8px}
+.credit a{color:var(--muted)}
+.wide{aspect-ratio:21/8;max-height:380px}
 .swatches{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
 .swatches div{width:88px;font-family:"Work Sans",sans-serif;font-size:11.5px;color:var(--muted)}
 .swatches span{display:block;height:44px;border-radius:8px;margin-bottom:6px;border:1px solid var(--line)}
@@ -590,6 +596,13 @@ footer{border-top:1px solid var(--line);padding:30px 20px 40px;text-align:center
           <div class="src"><div class="k">Figure 19</div><div class="v"><b>“Nautches: An Appeal to Educated Hindus”</b>, front page of tract, The Christian Literature Society, Madras, 1893. India Office Records and Private Papers, British Library. Photograph by Anisha Ahuja.</div></div>
           <div class="src"><div class="k">Figure 22</div><div class="v"><b>“Court lady singing and playing the vina”</b>, Muhammad Rizavi Hindi, c. 1760, India, Mughal. The Cleveland Museum of Art, open access.</div></div>
         </div>
+        <h3>Consulting page photographs</h3>
+        <div class="srcs">
+          <div class="src"><div class="k">Hero</div><div class="v">Fountain pen on lined paper. Photo by <a href="https://unsplash.com/@aaronburden?utm_source=anisha_ahuja&utm_medium=referral" target="_blank" rel="noopener">Aaron Burden</a> on <a href="https://unsplash.com/photos/y02jEX_B0O0?utm_source=anisha_ahuja&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a>.</div></div>
+          <div class="src"><div class="k">Services</div><div class="v">Writing at a table, by <a href="https://unsplash.com/@uns__nstudio?utm_source=anisha_ahuja&utm_medium=referral" target="_blank" rel="noopener">Unseen Studio</a> on <a href="https://unsplash.com/photos/s9CC2SKySJM?utm_source=anisha_ahuja&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a>; red-pen editing, by <a href="https://unsplash.com/@lilartsy?utm_source=anisha_ahuja&utm_medium=referral" target="_blank" rel="noopener">lilartsy</a> on <a href="https://unsplash.com/photos/333oj7zFsdg?utm_source=anisha_ahuja&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a>; open book, by <a href="https://unsplash.com/@yanu?utm_source=anisha_ahuja&utm_medium=referral" target="_blank" rel="noopener">Yannick Pulver</a> on <a href="https://unsplash.com/photos/hopX_jpVtRM?utm_source=anisha_ahuja&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a>.</div></div>
+          <div class="src"><div class="k">Banner</div><div class="v">Laptop and open book. Photo by <a href="https://unsplash.com/@nickmorrison?utm_source=anisha_ahuja&utm_medium=referral" target="_blank" rel="noopener">Nick Morrison</a> on <a href="https://unsplash.com/photos/FHnnjk1Yj7Y?utm_source=anisha_ahuja&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a>.</div></div>
+          <div class="src"><div class="k">Licence</div><div class="v">All five are used under the <a href="https://unsplash.com/license" target="_blank" rel="noopener">Unsplash License</a> and are served from Unsplash’s image CDN.</div></div>
+        </div>
         <h3>Not reproduced</h3>
         <div class="measure"><p>The dissertation’s remaining figures are screenshots from Air India’s “Safety Mudras” video, the Netflix series <i>Heeramandi</i>, the films <i>Pakeezah</i>, <i>Devdas</i>, <i>Umrao Jaan</i>, <i>Mughal-e-Azam</i>, <i>Gaja Gamini</i> and <i>Mr. India</i>, a Hindustani Art &amp; Music Society curriculum page, a lehra mobile app, and a 1920s etching of unknown provenance. These remain under third-party copyright and are omitted from this site; they can be consulted in the dissertation itself.</p></div>
         <h3>Site palette</h3>
@@ -814,7 +827,8 @@ footer{border-top:1px solid var(--line);padding:30px 20px 40px;text-align:center
 <!-- =============== CONSULTING PAGE =============== -->
 <main id="view-c" class="view">
   <section class="hero" style="padding-bottom:24px">
-    <div class="wrap">
+    <div class="wrap hero-grid">
+    <div>
       <div class="eyebrow">Editing &amp; writing consultation</div>
       <h1 style="max-width:14ch">Finish the dissertation. <em>Ship</em> the manuscript.</h1>
       <p class="lede measure" style="margin-top:18px">One-on-one consultation, developmental editing and copyediting for graduate students and academics, from someone who has spent six years at the Claremont Colleges doing exactly this.</p>
@@ -823,15 +837,21 @@ footer{border-top:1px solid var(--line);padding:30px 20px 40px;text-align:center
         <a class="btn ghost" href="#c/c-how">How it works</a>
       </div>
     </div>
+    <div>
+      <div class="cphoto" style="aspect-ratio:4/5;max-height:440px"><img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=70&w=1000" alt="Fountain pen on lined paper" loading="lazy" ></div>
+      <div class="credit">Photo by <a href="https://unsplash.com/@aaronburden?utm_source=anisha_ahuja&utm_medium=referral" target="_blank" rel="noopener">Aaron Burden</a> on <a href="https://unsplash.com/photos/y02jEX_B0O0?utm_source=anisha_ahuja&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></div>
+    </div>
+    </div>
   </section>
 
   <section class="wrap section" id="c-services">
     <div class="section-head"><h2>Services</h2><p class="small">Three kinds of help, scoped to where the writing actually is.</p></div>
     <div class="grid g3">
-      <div class="card" style="border-top-color:var(--teal)"><div class="num">01</div><h3>Dissertation &amp; thesis coaching</h3><p>Structure, argument and momentum: chapter plans, prospectus and proposal drafts, making sense of committee feedback, and the unstuck session when a chapter stalls. Weekly or fortnightly sessions with written notes after each.</p></div>
-      <div class="card" style="border-top-color:var(--teal)"><div class="num">02</div><h3>Developmental editing</h3><p>Full-manuscript reads for articles and books: what the argument is, where it lands, what a reviewer will ask, and a revision plan. Includes a review of the revised draft.</p></div>
-      <div class="card" style="border-top-color:var(--teal)"><div class="num">03</div><h3>Copyediting &amp; professional documents</h3><p>Line-level editing to a style guide, citation cleanup, and the documents around the research: job letters, fellowship and grant applications, teaching and research statements, abstracts, conference proposals.</p></div>
+      <div class="card" style="border-top-color:var(--teal)"><div class="cphoto"><img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=70&w=800" alt="Person writing at a wooden table beside a mug" loading="lazy" ></div><div class="num">01</div><h3>Dissertation &amp; thesis coaching</h3><p>Structure, argument and momentum: chapter plans, prospectus and proposal drafts, making sense of committee feedback, and the unstuck session when a chapter stalls. Weekly or fortnightly sessions with written notes after each.</p></div>
+      <div class="card" style="border-top-color:var(--teal)"><div class="cphoto"><img src="https://images.unsplash.com/photo-1550592704-6c76defa9985?auto=format&fit=crop&q=70&w=800" alt="Editing a page with a red pen" loading="lazy" ></div><div class="num">02</div><h3>Developmental editing</h3><p>Full-manuscript reads for articles and books: what the argument is, where it lands, what a reviewer will ask, and a revision plan. Includes a review of the revised draft.</p></div>
+      <div class="card" style="border-top-color:var(--teal)"><div class="cphoto"><img src="https://images.unsplash.com/photo-1592819695396-064b9572a660?auto=format&fit=crop&q=70&w=800" alt="Open book on a wooden table" loading="lazy" ></div><div class="num">03</div><h3>Copyediting &amp; professional documents</h3><p>Line-level editing to a style guide, citation cleanup, and the documents around the research: job letters, fellowship and grant applications, teaching and research statements, abstracts, conference proposals.</p></div>
     </div>
+    <div class="credit">Photos by <a href="https://unsplash.com/@uns__nstudio?utm_source=anisha_ahuja&utm_medium=referral" target="_blank" rel="noopener">Unseen Studio</a> on <a href="https://unsplash.com/photos/s9CC2SKySJM?utm_source=anisha_ahuja&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a>, <a href="https://unsplash.com/@lilartsy?utm_source=anisha_ahuja&utm_medium=referral" target="_blank" rel="noopener">lilartsy</a> on <a href="https://unsplash.com/photos/333oj7zFsdg?utm_source=anisha_ahuja&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a> and <a href="https://unsplash.com/@yanu?utm_source=anisha_ahuja&utm_medium=referral" target="_blank" rel="noopener">Yannick Pulver</a> on <a href="https://unsplash.com/photos/hopX_jpVtRM?utm_source=anisha_ahuja&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></div>
   </section>
 
   <section class="wrap section" id="c-who">
@@ -866,6 +886,11 @@ footer{border-top:1px solid var(--line);padding:30px 20px 40px;text-align:center
       <div class="card"><div class="num">Step 2</div><h3>A free 20-minute call</h3><p>To scope the work, agree a plan and a timeline, and make sure the fit is right in both directions.</p></div>
       <div class="card"><div class="num">Step 3</div><h3>Editing or sessions on a schedule</h3><p>Fixed turnaround for edits; fixed session times for coaching. Written notes after every round so nothing lives only in conversation.</p></div>
     </div>
+  </section>
+
+  <section class="wrap" style="padding-top:8px">
+    <div class="cphoto wide"><img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=70&w=1600" alt="Laptop beside an open book" loading="lazy" ></div>
+    <div class="credit">Photo by <a href="https://unsplash.com/@nickmorrison?utm_source=anisha_ahuja&utm_medium=referral" target="_blank" rel="noopener">Nick Morrison</a> on <a href="https://unsplash.com/photos/FHnnjk1Yj7Y?utm_source=anisha_ahuja&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></div>
   </section>
 
   <section class="wrap section" id="c-faq">
